@@ -6,22 +6,6 @@
 <title></title>
 		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
         <link href="css/map.css" rel="stylesheet" type="text/css"/>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-        <script src="scripts/raphael.js" type="text/javascript" charset="utf-8"></script>
-        <script src="scripts/MapObject.js" type="text/javascript" charset="utf-8"></script>
-        <script type="text/javascript" charset="utf-8">
-			$(document).ready (function () {
-				// Change of drop down
-				$('#states').change (function () {
-					var newURL = $(this).val () + '/';
-					m.createDialog (newURL);
-				});
-				
-				var m = new MapObject ('paper', '#F9AE07', '#744E99');
-			});
-		</script>
     </head>
 <body>
         <div id="canvas" class="butran">
@@ -91,5 +75,21 @@
             <div id="cancel"><a href="#">Cancel</a></div>
             <div id="ok"><a href=#">OK</a></div>
         </div>
+        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+        <script src="scripts/raphael.js" type="text/javascript" charset="utf-8"></script>
+        <script src="scripts/MapObject.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8">
+			$(document).ready (function () {
+				// Change of drop down
+				$('#states').change (function () {
+					var newURL = $(this).val () + '/';
+					m.createDialog (newURL);
+				});
+				
+				var m = new MapObject ('paper', '#F9AE07', '#744E99');
+			});
+		</script>
 </body>
 </html>
